@@ -1,15 +1,24 @@
 import React from 'react';
-import ReactDOM from "react-dom/client";
+import './App.css';
 
-function myFirstComponent(){
+const todoItems = ['Swag', 'Bentley', 'CSGO']
+
+function printTodoList(items){
+    return items.map((item) => <h2>{item}</h2>)
+}
+
+function App(){
     return (
         <>
             <h1>
                 Hello World!
-            </h1> 
+            </h1>
+            <div>
+                These are my todos:
+                {printTodoList(todoItems)}
+            </div>
         </>
     )
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<myFirstComponent />)
+export default App
