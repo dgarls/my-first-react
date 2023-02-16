@@ -3,15 +3,14 @@ import './App.css';
 import brian from './images/brian.png'
 import batman from './images/batman.jpg'
 import ye from './images/ye.jpg';
+import heshus from './images/heshus.jpeg'
 
 function App(){
-    const images = [brian, batman, ye];
+    const images = [brian, batman, ye, heshus];
     const [imageNum, setImageNum] = useState(0);
 
-    console.log(imageNum);
-
     function displayImage() {
-        return <img src={images[Math.abs(imageNum % 3)]} alt='funny'></img>
+        return <img src={images[Math.abs(imageNum % images.length)]} alt='funny'></img>
     }
 
     function nextImage() {
