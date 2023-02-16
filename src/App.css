@@ -26,7 +26,7 @@ h3{
     align-items: center;
     height: 500px;
     width: 500px;
-    border: 5px solid red;
+    border: 5px solid rgb(255, 255, 255);
 }
 
 .buttonWrapper{
@@ -39,7 +39,7 @@ button{
     color: rgb(255, 255, 255);
     background-color: rgba(0, 76, 255, 0.424);
     font-family: inherit;
-    border: 1px solid black;
+    border: 4px solid rgb(255, 255, 255);
     font-size: 50px;
     padding-right: 1vw;
     padding-left: 1vw;
